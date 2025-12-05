@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo hospedado no meu próprio servidor</p>
+
+    <video width="500" poster="imagens/full.png" controls loop>
+        <source src="midia/Meuvideo2.mp4" type="video/mp4">
+        <source src="midia/Meuvideo2.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    
+    <iframe width="500" height="315"
+     src="https://www.youtube.com/embed/jPWsBuiy1rE?si=S8xshy7qjRt9_JP0"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    <!--estou tento dificuldades com os vídeos do YouTube devido as restrições-->
+
+    <h1>Inserindo vídeos do YouTube 2</h1>
+    <p>Por causa das restrições do YouTube não conseguir incorporar o vídeo <br><q><strong>uso de IA</strong></q></p>
+
+    </p>
+    <!-- NOVO ELEMENTO: Link que usa a miniatura do vídeo. REMOVIDO 'margin: 0 auto;' para DESCENTRALIZAR. -->
+        <div style="max-width: 500px; margin: 0 0; position: relative;">
+            <a href="https://www.youtube.com/watch?v=3hng-hmSv2Y" target="_blank" title="Clique para assistir no YouTube">
+                <!-- Imagem de miniatura (thumbnail) do vídeo -->
+                <img 
+                    src="https://i.ytimg.com/vi/3hng-hmSv2Y/maxresdefault.jpg" 
+                    alt="Miniatura do vídeo '3hng-hmSv2Y'"
+                    style="width: 100%; height: auto; border-radius: 8px; display: block; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+                    onerror="this.onerror=null; this.src=''https://placehold.co/500x315/f3f4f6/374151?text=Miniatura+Indisponível'"
+                >
+                
+                <!-- Ícone de Play sobreposto (simulando um player) -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.6)" />
+                        <path d="M9.5 16.5v-9l6 4.5z" fill="white"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    
+
+    
+
+    <h1>Inserindo vídoes do vimeo</h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/153741644?h=e7b09f58e6" 
+    width="500" height="360" controls frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+
+
+</body>
+</html>
