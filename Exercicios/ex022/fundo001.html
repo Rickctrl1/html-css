@@ -9,12 +9,12 @@
             background-image: url(imagens/wallpaper001.jpg);
         }
         div.quadrado{
-            display: inline-block;
-            border-radius: 10px;
+            display: inline-block;           /*para deixar tudas as caixas na horizontal*/
+            border-radius: 20px;             /*borda arrendodada*/
             background-color: lightgray;
             border: 1px solid black;
-            width: 300px;
-            height: 300px;
+            width: 300px;                 /*largura*/
+            height: 300px;                /*altura*/
         }
 
         div#q1 {
@@ -29,18 +29,46 @@
             background-image: url(imagens/pattern001.png);
         }
 
+        div.circulo{
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid black;
+            display: inline-block;
+            border-radius: 1000px;
+        }
+
+        div#c1{
+            background-color:skyblue;
+        }
+
+        div#c2{
+            background-image: linear-gradient(to bottom, yellow, red) ;
+        }
+
+        div#c3{
+            background-image: url(imagens/pattern001.png);
+        }
+
     </style>
 </head>
 <body>
-    <div class="quadrado" id="q1">
-
+    <div class="quadrado" id="q1">          <!-- CLASS = multiplo | ID = único -->
     </div>
+
     <div class="quadrado" id="q2">
-
     </div>
-    <div class="quadrado" id="q3">
 
+    <div class="quadrado" id="q3">
+    </div>
+
+    <div class="circulo" id="c1">
     </div>
     
+    <div class="circulo" id="c2">
+    </div>
+
+    <div class="circulo" id="c3">
+    </div>
 </body>
 </html>
