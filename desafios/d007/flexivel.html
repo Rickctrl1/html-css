@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>imagem flexível</title>
+    <title>imagem flexivel</title>
 </head>
 <body>
-    <h1>Imgame flexível</h1>
+    <h1>Imagem flexivel</h1>
     <p>Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência 🤯</p>
+
+    <picture>
+        <source media="(max-width: 655px )" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="">
+    </picture>
     
 </body>
 </html>
