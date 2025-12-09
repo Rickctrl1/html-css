@@ -35,7 +35,8 @@
             background-color: white;
             border: 1px solid black;
             display: inline-block;
-            border-radius: 1000px;
+            border-radius: 50%;          /*para circulos perfeitos usar % no lugar de PX*/
+            
         }
 
         div#c1{
@@ -53,22 +54,25 @@
     </style>
 </head>
 <body>
-    <div class="quadrado" id="q1">          <!-- CLASS = multiplo | ID = único -->
+    <div class="linha-cima">
+        <div class="quadrado" id="q1">          <!-- CLASS = multiplo | ID = único -->
+        </div>
+        <div class="quadrado" id="q2">
+        </div>
+        <div class="quadrado" id="q3">
+        </div>
     </div>
 
-    <div class="quadrado" id="q2">
-    </div>
+    <!-- posso usar a tag br para quebrar a linha, porém o uso das div de linha são mais interessante-->
 
-    <div class="quadrado" id="q3">
-    </div>
-
-    <div class="circulo" id="c1">
-    </div>
-    
-    <div class="circulo" id="c2">
-    </div>
-
-    <div class="circulo" id="c3">
+    <div class="linha-baixo">
+        <div class="circulo" id="c1">
+        </div>
+        
+        <div class="circulo" id="c2">
+        </div>
+        <div class="circulo" id="c3">
+        </div>
     </div>
 </body>
 </html>
