@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: repeat-y;
-            background-size: cover;
+            /*height: 100vh;
+              background-color: black;
+              background-image: url(imagens/wallpaper002.jpg);
+              background-position: center top;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;*/
+
+            /*Shorthard - backgroud
+               backgroud: color > image > position > repeat > size > attachment */ /*size não funciona, fazer fora short*/
+           
+           /*background: black url(imagens/wallpaper002.jpg) center top no-repeat fixer;*/
+           height: 100vh;
+           background: black url('imagens/wallpaper002.jpg') center top / cover no-repeat fixed;
+
+            
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;     /* centralizar a caixa */
             border: 1px solid darkblue;
@@ -24,6 +34,7 @@
         }
     </style>
 </head>
+
 <body>
     <main>
         <h1>teste de imagem de fundo</h1>
