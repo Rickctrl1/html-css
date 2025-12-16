@@ -10,27 +10,22 @@
         }
 
         table{
-            width: 400px;
-        }
-
-        tr.linha1{
-            background-color: gray;
-        }
-
-        tr.linha3{
-            background-color: gray;
+            width: 400px;  /* largura */
+            height: 400px;  /*altura*/
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
             border-collapse: collapse;  /* junta as linhas da tabela */
-        }
-
-        td.dado1{
-            background-color: chocolate;
+            text-align: center;  /* alinhamento horizontal */
+            vertical-align: middle; /* alinhamneto vertical */
         }
         
+        .numero{
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -44,48 +39,27 @@
     <!-- sempre respeitar a hierarquia das tabelas senão os dados podem vim antes ou depois da tanela -->
 
     <table>
-        <tr class="linha1">    <!-- Primeira linha -->
-            <td class="dado2">A1</td>
+        <tr>    <!-- Primeira linha -->
+            <td>A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha2">    <!-- Segunda linha -->  
+        <tr>    <!-- Segunda linha -->  
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">500</td>
         </tr>
-        <tr class="linha3">    <!-- Terceira linha -->
+        <tr>    <!-- Terceira linha -->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">500</td>
         </tr>
         <tr>    <!-- Quarta linha -->
             <td>A4</td>
             <td>B4</td>
-            <td class="dado1">C4</td>
+            <td>C4</td>
         </tr>
 
-    </table>
-
-    <br>
-
-    <table>
-        <h2>Exemplo de não obediência da hierarquia das tabelas </h2>
-            <table>
-            <td class="linha1">    <!-- Primeira linha -->
-                <td class="dado2">A1</td>
-                <td>B1</td>
-                <td>C1</td>
-            </td>
-            <tr class="linha2">    <!-- Segunda linha -->
-                <td>A2</td>
-                <tr>B2</tr>
-                <td>C2</td>
-            </tr>
-            <tr class="linha3">    <!-- Terceira linha -->
-                <td>A3</td>
-                <td>B3</td>
-                <td>C3</td>
     </table>
 
 </body>
