@@ -9,6 +9,12 @@
             font-family: Arial, Helvetica, sans-serif;
             
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
 
         table{
            width: 500px;
@@ -33,6 +39,7 @@
             color: black;
             
         }
+
     </style>
 </head>
 <body>
@@ -48,12 +55,13 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>  <!--cabeçalho-->
             <tr>
-                <th>Posição</th>
-                <th>Capitais</th>  <!--titulo-->
-                <th>Unidade federativa</th>
-                <th>população</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Capitais</th>  <!--titulo-->
+                <th scope="col">Estados</th>
+                <th scope="col">população</th>
             </tr>
         </thead>
 
@@ -224,7 +232,7 @@
         </tbody>
 
         <tfoot> <!--rodapé-->
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td></td>
                 <td></td>
                 <td><strong>93.850.395</strong></td>
