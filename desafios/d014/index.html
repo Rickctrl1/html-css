@@ -21,7 +21,7 @@
             border: 1px solid black;
         }
 
-        tr.linha1, tr.linha2, tr.linha3{
+        tr.linha1, tr.linha2, tr.linha3, tr.linha0{
             background-color: gray;
             color: white;
         }
@@ -35,11 +35,14 @@
     <table>
         <thead>
             <tr class="linha1">
-                <th>Área</th>
-                <th>Disciplinas</th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
                 <th colspan="2">Notas</th>
-                
-                <th>Média</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr class="linha0">
+                <th>Nota 1</th>
+                <th>Nota 2</th>
             </tr>
             <tr>           
                <th rowspan="4">Exatas</th>
