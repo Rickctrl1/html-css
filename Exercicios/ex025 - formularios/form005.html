@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="get" >
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+            <!--para não ficar marcado em ambras as caixa use o mesmo name ex.:( NAME="SEXO" )-->
+            <!--Não funciona no checkbox, apenas no radio-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquente</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">    
+            
+        </p>
+    </form>
+</body>
+</html>
