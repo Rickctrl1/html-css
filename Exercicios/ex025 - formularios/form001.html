@@ -14,13 +14,19 @@
     <!--diferença entre "name" e "id". NAME = html, php. ID = js, label-->
     <h1>Meu primeiro formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="off"><!--dados sensiveis usar POST, caso contrário use GET-->
-        <p><label for="inome">Nome:</label><!--no "for" sempre colocar o id-->
-            <input type="text" name="nome" id="inome"></p>
+        <p>
+            <label for="inome">Nome:</label><!--no "for" sempre colocar o id-->
+            <input type="text" name="nome" id="inome">
+        </p>
 
-        <p><label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
 
-        <p><input type="submit" value="enviar"></p>
+        <p>
+            <input type="submit" value="enviar">
+        </p>
     </form>
 </body>
 </html>
