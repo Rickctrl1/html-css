@@ -8,19 +8,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
+html, body {
     width: 100vw; /*largura*/
     height: 100vh; /*altura*/
-
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
     /* 
     VW (Viewport width) e 
     VH (Viewport height) 
     são unidades de medida em CSS que se referem à largura e altura da janela de visualização (viewport) do navegador, respectivamente, sendo 1vw igual a 1% da largura da viewport e 1vh igual a 1% da altura da viewport, ideais para layouts responsivos que se adaptam a diferentes tamanhos de tela 
     */
-
-    background-color: #233eff;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 h1{
