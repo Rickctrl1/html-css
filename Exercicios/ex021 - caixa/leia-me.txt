@@ -1,0 +1,12 @@
+Uma "div semântica" se refere ao uso correto da tag <div> 
+em conjunto com outras tags HTML semânticas 
+
+ <header> <header/>     cabeçalho
+
+ <nav> <nav/>		link
+ 
+ <article> <article/>	artigo
+
+ <section> <section/>
+
+ <footer> <footer/>	rodapé
