@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+/* escolher= shrink.
+   aumentar= grow.   sim=1 | não=0 */
+
+        div#cxa{
+           flex: 1 0 250px; /*grow+shrink+basis */
+        }
+
+        div#cxb{
+            flex: 0 1 250px;
+        }
+
+        div#cxc{
+            flex: 0 1 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxa">a</div>
+        <div class="item" id="cxb">b</div>
+        <div class="item" id="cxc">c</div>
+    </div>
+    
+</body>
+</html>
