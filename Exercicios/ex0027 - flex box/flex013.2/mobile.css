@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+header, menu > ul{
+    flex-flow: column nowrap;
+}
+
+header > h1{
+    flex-basis: 50px;
+}
+
+header>menu>a{
+    width: 70vw;
+}
+
